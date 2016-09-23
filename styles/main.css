@@ -1,0 +1,213 @@
+/* Eric Meyer's CSS Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   This is a Sass partial
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+h1, h2, p {
+  font-family: 'Lato', sans-serif; }
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e3e7f5; }
+
+.date p {
+  color: #d9dbe1;
+  font-size: 2.4vh; }
+
+h1 {
+  font-size: 6vh;
+  color: #6cbfee; }
+  @media only screen and (min-width: 691px) and (max-width: 995px) {
+    h1 {
+      font-size: 5vh; } }
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white; }
+
+article p {
+  color: white;
+  line-height: 1.4em;
+  font-size: 16px;
+  padding-top: 2%; }
+
+body {
+  padding: 3% 3% 0 0; }
+  @media only screen and (min-width: 691px) and (max-width: 995px) {
+    body {
+      padding: 1% 0; } }
+  @media only screen and (max-width: 690px) {
+    body {
+      padding: 0 1% 0 0; } }
+
+.container {
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.items {
+  height: 100%; }
+
+section {
+  float: left;
+  margin-bottom: 2vw;
+  margin-right: 2%;
+  width: 100%; }
+  @media only screen and (max-width: 690px) {
+    section {
+      margin: 9vh 0 0 0; } }
+  section div.date {
+    width: 14vw;
+    float: left;
+    margin: 0 3vw 0 1vw;
+    margin-left: 1vw;
+    margin-right: 3vw;
+    text-align: right;
+    top: 1vh; }
+    @media only screen and (min-width: 691px) and (max-width: 995px) {
+      section div.date {
+        width: 10vw;
+        margin: 0 3vw 0 0; } }
+    @media only screen and (max-width: 690px) {
+      section div.date {
+        position: relative;
+        top: -8vh;
+        left: 10vw; } }
+  section:last-of-type article {
+    background: #3594cb; }
+  section:last-of-type .date h1 {
+    color: #3594cb; }
+  section:last-of-type .triangle {
+    border-right-color: #3594cb; }
+
+article {
+  background: #6cbfee;
+  border-radius: 5px;
+  float: left;
+  margin-left: 6%;
+  padding: 4%;
+  position: relative;
+  width: 70%; }
+  @media only screen and (min-width: 691px) and (max-width: 995px) {
+    article {
+      width: 80%; } }
+  @media only screen and (max-width: 690px) {
+    article {
+      position: relative;
+      top: -7vh;
+      margin: 0;
+      width: 100%; } }
+
+.triangle {
+  width: 5px;
+  height: 15px;
+  border-right: 9px solid #6cbfee;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  position: absolute;
+  top: 5px;
+  left: -8px; }
+  .triangle:last-of-type {
+    color: #3594cb; }
+
+.sideBar {
+  background: #afdcf8;
+  float: left;
+  height: 150vh;
+  left: 20%;
+  margin-left: 0%;
+  margin-top: 40px;
+  padding: 0%;
+  position: relative;
+  width: 8px;
+  z-index: 100; }
+  @media only screen and (min-width: 691px) and (max-width: 995px) {
+    .sideBar {
+      margin-top: 15vh;
+      left: 15vw; } }
+  @media only screen and (max-width: 690px) {
+    .sideBar {
+      z-index: -1;
+      left: 50%;
+      top: 1vh; } }
+  .sideBar .circle {
+    background: #3594cb;
+    border-radius: 50%;
+    height: 3em;
+    left: -20px;
+    position: absolute;
+    top: -6vh;
+    width: 3em;
+    border: 5px solid #afdcf8; }
+    @media only screen and (min-width: 691px) and (max-width: 995px) {
+      .sideBar .circle {
+        top: -7vh; } }
+    .sideBar .circle i {
+      position: absolute;
+      color: white;
+      font-size: 30px;
+      top: 6%;
+      left: 31%; }
+    .sideBar .circle:last-of-type {
+      top: 40vh; }
+      @media only screen and (min-width: 691px) and (max-width: 995px) {
+        .sideBar .circle:last-of-type {
+          top: 41vh; } }
+      @media only screen and (max-width: 690px) {
+        .sideBar .circle:last-of-type {
+          top: 54vh; } }
+      .sideBar .circle:last-of-type i {
+        font-size: 20px;
+        top: 25%;
+        left: 22%; }
+
+/*# sourceMappingURL=main.css.map */

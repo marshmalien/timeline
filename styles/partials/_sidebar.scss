@@ -1,0 +1,61 @@
+.sideBar {
+  background: $lightBlue;
+  float: left;
+  height: 150vh;
+  left: 20%;
+  margin-left: 0%;
+  margin-top: 40px;
+  padding: 0%;
+  position: relative;
+  width: 8px;
+  z-index: 100;
+  @include media(tablet) {
+    margin-top: 15vh;
+    left: 15vw;
+  }
+  @include media(mobile) {
+    z-index: -1;
+    left: 50%;
+    top: 1vh;
+  }
+
+
+  .circle {
+    background: $darkBlue;
+    border-radius: 50%;
+    height: 3em;
+    left: -20px;
+    position: absolute;
+    top: -6vh;
+    width: 3em;
+    border: 5px solid $lightBlue;
+
+    @include media(tablet) {
+      top: -7vh;
+    }
+
+    i {
+      position: absolute;
+      color: white;
+      font-size: 30px;
+      top: 6%;
+      left: 31%;
+    }
+
+    &:last-of-type {
+      top: 40vh;
+      @include media(tablet) {
+        top: 41vh;
+      }
+      @include media(mobile) {
+        top: 54vh;
+      }
+
+      i {
+        font-size: 20px;
+        top: 25%;
+        left: 22%;
+      }
+    }
+  }
+}
